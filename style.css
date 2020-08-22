@@ -6,29 +6,62 @@ body {
     padding-top: 109px;
 }
 #search-bar {
-    border: none;
+    border-style: hidden;
 }
 .center {
-    display:flex;
+    display: flex;
     background-color: white;
-    
+    margin: auto;
     border-radius: 5px;
 }
+.center-pad {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 #box-container {
-    display: inline-flex;
-    align-items: right;
-    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-left: 15px;
 } 
+.search-box {
+    width: 724px;
+    height: 44px;
+    border-style: solid;
+    border-color: #e4e4e4;
+    border-radius: 40px;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.search-box:hover {
+    cursor: text;
+    border-style: solid;
+    border-color: #e4e4e4;
+    border-radius: 40px;
+    border-width: 2px;
+    box-shadow: 3px 3px 4px  #e4e4e4;
+}
+.google-search {
+    border: none;
+    padding-left: 5px;
 
+}
+.magnifying-glass {
+    width: 20px;
+    color: white
+}
 header {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    }
+    background-color: white;
+}
 .grid-container {
     width: 100%;
     height: 50px;
-    background: white;
     color: white;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -38,12 +71,13 @@ header {
 }
 .side2 {
     justify-self: end;
+    padding-right: 10px;
 }
 ul {
     display: flex;
-    list-style; none;
+    list-style: none;
     height: 30px;
-    align-items: center1;
+    align-items: center;
 }
 .left {
     justify-content: flex-start;
@@ -53,7 +87,7 @@ ul {
     justify-content: flex-end;   
     padding: 12px;
 } 
-footer {
+footer { 
     position: fixed;
     width: 100%;
     left: 0px;
@@ -65,3 +99,35 @@ footer {
     border-top-width: 2px;
     border-top-color: #e4e4e4;
 }
+.button {
+    border-style: none;
+    color: #5F6368;
+    background-color: #f6f5f4;
+    font-size: 14px;
+    padding-right: 16px;
+    padding-left:16px;
+    border-radius: 5px;
+}
+.button:hover {
+    color: black;
+    background-color: #f6f5f4;
+    border-style:solid;
+    border-width: 1px;
+}
+.sign-in {
+    border-style: none;
+    color: white;
+    background-color:#4285f4;
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 16px;
+    padding-left:16px;
+    border-radius: 3px;
+}
+a {
+    color: #575757;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+  }
